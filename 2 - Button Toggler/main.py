@@ -7,12 +7,8 @@ PINOUT = 21
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(PINOUT, GPIO.OUT)
-for i in range(5):
-    GPIO.output(PINOUT, True)
-    print('.', end='')
-    stdout.flush()
-    sleep(0.5)
-    GPIO.output(PINOUT, False)
-    sleep(0.5)
-print('!')
+
+GPIO.output(PINOUT, True)
+input("Press Enter to continue...")
+GPIO.output(PINOUT, False)
 GPIO.cleanup()
