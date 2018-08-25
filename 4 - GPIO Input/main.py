@@ -13,10 +13,5 @@ if __name__ == '__main__':
     GPIO.add_event_detect(17, GPIO.BOTH)
     GPIO.add_event_callback(17, cb)
 
-    try:
-        while True:
-            pass
-    except KeyboardInterrupt:
-        print()
-
+    input('Press enter to exit')
     GPIO.cleanup()

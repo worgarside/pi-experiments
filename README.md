@@ -5,3 +5,4 @@
 2. 4 LEDs, used to test the 4 pins of a button
 3. Stepper motor controller
 4. LED controlled by button press
+5. Motor controlled by button press
